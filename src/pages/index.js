@@ -28,7 +28,7 @@ export default ({ data }) => {
     <Seo title="Home" />
     <div>
       <h1> Habeeb's Thoughts on Fullstack Technologies</h1>
-      {/* shows the number of blogpost <h4>{data.allMarkdownRemark.totalCount}</h4> */}
+      <h4>{data.allMarkdownRemark.totalCount} Posts </h4>
       {
         data.allMarkdownRemark.edges.map(({node}) => (
         <BlogBody key={node.id}>
